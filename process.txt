@@ -10,6 +10,8 @@ git commit :  Use git commit to tell Git to commit the file to the repository.
 Git commit -m <message> 
 eg: git commit -m'Learning for the first time'
 
+
+
 Sceond:
 git log :The git log command displays commit logs from the most recent to the most distant.
 We can also use "git log --pretty=oneline"  command to simplify our message.
