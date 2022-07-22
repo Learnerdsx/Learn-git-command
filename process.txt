@@ -10,4 +10,22 @@ git commit :  Use git commit to tell Git to commit the file to the repository.
 Git commit -m <message> 
 eg: git commit -m'Learning for the first time'
 
- 
+
+
+Sceond:
+git log :The git log command displays commit logs from the most recent to the most distant.
+We can also use "git log --pretty=oneline"  command to simplify our message.
+
+git reset:Rollback to the previous version.
+eg: git reset --HEAD^
+
+git reflog : Record every command you make.
+
+summary:
+1.The version that HEAD points to is the current version, 
+so Git allows us to travel through the history of versions using the command Git reset --hard commit_id.
+
+2.you can view the commit history with "git log "to determine which version you want to fall back to.
+
+3.Use"Git reflog" to look at the command history to determine which version to go back to.
+
