@@ -39,4 +39,18 @@ eg: git checkout -- process.txt
 
 git reset HEAD <file>:You can undo the changes in the staging area and put them back into the workspace
 
+Fifth:
+If you delete a file ,you will have tow options
+one is Do delete the file from the repository ,then you can use the command
+git rm <file> such as " git rm readme.txt " and use "git commit -m 'messege' ",
+the file is now delete from the repository.
+
+The other is you make a mistake ,but  you can easily restore a deleted file to the lasted version
+because it is still available in the version library(repository).
+you can use "git checkout --<file>" to restore!
+git checkout -- <file> actually is replace the version in your workspace with the version in you repository.
+
+summary : 
+We learn a new command :git rm <file> such as git rm readme.txt.
+Warning :Files deleted without ever beign added to the repository are uncoverable!
  
