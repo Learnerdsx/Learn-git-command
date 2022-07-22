@@ -29,3 +29,5 @@ so Git allows us to travel through the history of versions using the command Git
 
 3.Use"Git reflog" to look at the command history to determine which version to go back to.
 
+Third:
+git status :Check the status of your Git repository.
