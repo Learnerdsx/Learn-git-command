@@ -10,8 +10,6 @@ git commit :  Use git commit to tell Git to commit the file to the repository.
 Git commit -m <message> 
 eg: git commit -m'Learning for the first time'
 
-
-
 Sceond:
 git log :The git log command displays commit logs from the most recent to the most distant.
 We can also use "git log --pretty=oneline"  command to simplify our message.
@@ -31,3 +29,12 @@ so Git allows us to travel through the history of versions using the command Git
 
 Third:
 git status :Check the status of your Git repository.
+
+Fourth:
+git checkout -- file :
+Discard the changes of workspace.Return the file to the state it was at the last Git commit or git add.
+eg: git checkout -- process.txt
+
+git reset HEAD <file>:You can undo the changes in the staging area and put them back into the workspace
+
+ 
