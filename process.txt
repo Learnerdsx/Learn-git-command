@@ -6,9 +6,10 @@ Use the git add <file>, note that it can be used repeatedly to add multiple file
 eg:  git add process.txt.
 We also can use the  "git add ." Add all the files at once.
 
-git commit :  Use git commit to tell Git to commit the file to the repository.
+git commit :Use git commit to tell Git to commit the file to the repository.
 Git commit -m <message> 
 eg: git commit -m'Learning for the first time'
+
 
 
 
@@ -29,8 +30,14 @@ so Git allows us to travel through the history of versions using the command Git
 
 3.Use"Git reflog" to look at the command history to determine which version to go back to.
 
+
+
 Third:
 git status :Check the status of your Git repository.
+
+
+
+
 
 Fourth:
 git checkout -- file :
@@ -38,6 +45,10 @@ Discard the changes of workspace.Return the file to the state it was at the last
 eg: git checkout -- process.txt
 
 git reset HEAD <file>:You can undo the changes in the staging area and put them back into the workspace
+
+
+
+
 
 Fifth:
 If you delete a file ,you will have tow options
@@ -49,8 +60,14 @@ The other is you make a mistake ,but  you can easily restore a deleted file to t
 because it is still available in the version library(repository).
 you can use "git checkout --<file>" to restore!
 git checkout -- <file> actually is replace the version in your workspace with the version in you repository.
+Also,you can use git restore <file> to restore the file before you use the command 'git rm <file>',
+but if you have used "git rm <file>",you must write the 'git reset'to undo your 'git rm'command.
 
 summary : 
 We learn a new command :git rm <file> such as git rm readme.txt.
 Warning :Files deleted without ever beign added to the repository are uncoverable!
  
+
+
+
+sixth:
