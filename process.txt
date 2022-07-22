@@ -1,0 +1,13 @@
+First:
+git init :Use the git init command to turn this directory into a git managed repository.
+
+git add :Tell Git to add files to the repository with the command git add.
+Use the git add <file>, note that it can be used repeatedly to add multiple files.
+eg:  git add process.txt.
+We also can use the  "git add ." Add all the files at once.
+
+git commit :  Use git commit to tell Git to commit the file to the repository.
+Git commit -m <message> 
+eg: git commit -m'Learning for the first time'
+
+ 
