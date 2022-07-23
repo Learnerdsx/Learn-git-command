@@ -77,3 +77,32 @@ summary :
 We learn a new command :git rm <file> such as git rm readme.txt.
 Warning :Files deleted without ever beign added to the repository are uncoverable!
 
+Sixth:
+
+git remote add <repository name> URL
+We usually call the remote repository origin
+eg: git remote add origin https://github.com/Learnerdsx/Learn-git-command.git
+We can use the command to connect the local repository with the remote repository
+
+git push :push the current branch to a branch of  the remote repository
+eg :git push origin master 
+push the current branch to the remote repository master branch.
+
+eg:git push -u origin master
+With the -u parameter ,Git will not only push the conents of the local master
+branch to the remote master branch ,but also associate the local master branch
+with the remote master branch ,which can simplify the command in the future push or pull.
+
+SSH:
+We can check whether SSH is installed on our machine by typing SSH in Git Bash.
+Next,run the 'ssh-keygen -t rsa'command to specify the RSA alogrithm to generate
+the key,and press enter three times without entering the password.Then two files are 
+generated:"id_rsa" and "id_rsa.pub",namely ,the key id_RSA and the public 
+key id_rsa.pub .For both files , they are hidden files.
+we can find both files in C:\Users\Username\.ssh
+After we add the SSH key ,we can test this by typing "ssh -T git@github.com in Git Bash
+
+git remote -v:To check the information of remote repository.
+
+git remote rm <name>: To delete remote repository.
+eg:'git remote rm origin'
