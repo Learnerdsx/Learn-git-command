@@ -11,14 +11,12 @@ Git commit -m <message>
 eg: git commit -m'Learning for the first time'
 
 
-
-
 Sceond:
 git log :The git log command displays commit logs from the most recent to the most distant.
 We can also use "git log --pretty=oneline"  command to simplify our message.
 
 git reset:Rollback to the previous version.
-eg: git reset --HEAD^
+eg: git reset --hard HEAD^  // 'git reset --hard commit_id'to return the specified version.
 
 git reflog : Record every command you make.
 
@@ -52,22 +50,30 @@ git reset HEAD <file>:You can undo the changes in the staging area and put them 
 
 Fifth:
 If you delete a file ,you will have tow options
-one is Do delete the file from the repository ,then you can use the command
-git rm <file> such as " git rm readme.txt " and use "git commit -m 'messege' ",
-the file is now delete from the repository.
+one is do delete the file from the repository ,then you can use the command
+git rm <file> such as " git rm readme.txt " or rm <file> and git add <file>
+then use 'git commit'the file is now delete from the repository.
 
-The other is you make a mistake ,but  you can easily restore a deleted file to the lasted version
+
+/*
+Supplement:
+git rm <file>:
+This is equivalent to deleting the files in the working directory and committing the deletion to the staging area,
+this is equivalent to 'rm <file>',and 'git add <file>'.
+*/
+
+The other is you make a mistake ,but you can easily restore a deleted file to the lasted version
 because it is still available in the version library(repository).
 you can use "git checkout --<file>" to restore!
 git checkout -- <file> actually is replace the version in your workspace with the version in you repository.
-Also,you can use git restore <file> to restore the file before you use the command 'git rm <file>',
-but if you have used "git rm <file>",you must write the 'git reset'to undo your 'git rm'command.
+Also,you can use git restore <file> to restore the file before you use the command 'git add <file>',
+
+but if you have used "git rm <file>",you must write the 'git reset HEAD 'to undo your 'git rm'command.
+In the second case of deletion :you can also use "git restore --staged <file>..." to unstage
+
+
 
 summary : 
 We learn a new command :git rm <file> such as git rm readme.txt.
 Warning :Files deleted without ever beign added to the repository are uncoverable!
- 
 
-
-
-sixth:
